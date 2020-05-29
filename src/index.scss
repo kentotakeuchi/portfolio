@@ -1,0 +1,102 @@
+@import './scss/variables.scss';
+@import './scss/mixin.scss';
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url('./asset/fonts/Gotham\ Book.otf');
+  format: ('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  font-weight: 600;
+  src: local('Gotham Light'), url('./asset/fonts/Gotham-Light.otf');
+  format: ('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: local('Gotham Bold'), url('./asset/fonts/Gotham-Bold.otf');
+  format: ('opentype');
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: local('Miller Banner'), url('./asset/fonts/Miller-Banner-Roman-01.ttf');
+  format: ('truetype');
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12, 12/16
+  }
+}
+
+body {
+  font-family: 'Gotham', Arial, Helvetica, sans-serif;
+  font-size: $font-size-default; // 1.6rem
+  font-weight: $font-weight-default; // 400
+  letter-spacing: 0.1rem;
+
+  color: $color-black;
+
+  background-color: $color-white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Miller Banner', 'Times New Roman', serif;
+  font-weight: $font-weight-default;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Gotham Bold', Arial, Helvetica, sans-serif;
+  font-weight: $font-weight-default;
+}
+
+p {
+  font-family: 'Gotham Light', Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  :active {
+  }
+
+  &.active {
+  }
+}

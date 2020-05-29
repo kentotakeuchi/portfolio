@@ -1,0 +1,51 @@
+[
+  {
+    "id": "yuzu-ramen",
+    "name": "yuzu ramen",
+    "date": "2020.06",
+    "url": "https://yuzurb-5d732.web.app/",
+    "client": true
+  },
+  {
+    "id": "random-generator-for-soccer",
+    "name": "random generator for soccer",
+    "date": "2020.03",
+    "url": "https://random-generator-for-soccer.web.app/",
+    "client": false
+  },
+  {
+    "id": "kaga-electronics-usa",
+    "name": "kaga electronics (usa) inc.",
+    "date": "2019.10",
+    "url": "http://www.taxan.com/",
+    "client": true
+  },
+  {
+    "id": "bank",
+    "name": "bank",
+    "date": "2019.05",
+    "url": "https://bank-of-something.herokuapp.com/",
+    "client": false
+  },
+  {
+    "id": "saturdays-art-surf",
+    "name": "saturdays art surf",
+    "date": "2018.12",
+    "url": "http://www.kentotakeuchi.com/saturdays-art-surf",
+    "client": false
+  },
+  {
+    "id": "todo",
+    "name": "todo",
+    "date": "2018.11",
+    "url": "http://www.kentotakeuchi.com/todo",
+    "client": false
+  },
+  {
+    "id": "clear",
+    "name": "clear",
+    "date": "2018.10",
+    "url": "http://www.kentotakeuchi.com/clear",
+    "client": false
+  }
+]

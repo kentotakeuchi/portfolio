@@ -1,0 +1,27 @@
+@import '../../../../scss/variables.scss';
+
+.language {
+  display: flex;
+  font-size: 1.2rem;
+  color: $color-grey-dark-2;
+  cursor: pointer;
+
+  & li:hover,
+  li:active,
+  li.active {
+    color: $color-black;
+  }
+
+  & span {
+    padding: 0 0.1rem;
+  }
+
+  &--main-header {
+    justify-self: end;
+    align-self: center;
+  }
+
+  &--side-drawer {
+    font-size: 12px;
+  }
+}

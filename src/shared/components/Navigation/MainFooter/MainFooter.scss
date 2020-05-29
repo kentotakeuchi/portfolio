@@ -1,0 +1,11 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixin.scss';
+
+.main-footer {
+  grid-column: 1 / -1;
+
+  &__copyright {
+    font-size: $font-size-small;
+    text-transform: uppercase;
+  }
+}

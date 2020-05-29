@@ -1,0 +1,14 @@
+@import '../../../../scss/mixin.scss';
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  row-gap: 5rem;
+  margin: 10rem 8rem;
+
+  &__main {
+    @include respond(phone) {
+      // margin-top: 10rem;
+    }
+  }
+}

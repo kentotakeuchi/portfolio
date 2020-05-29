@@ -1,0 +1,23 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/mixin.scss';
+
+.nav-links {
+  // TODO: share style
+  line-height: 1.67;
+  letter-spacing: 0.2rem;
+
+  // Main Header
+  &--main-header {
+    display: grid;
+    row-gap: 1.2rem;
+  }
+
+  // Side Drawer
+  &--side-drawer {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}

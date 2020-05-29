@@ -1,0 +1,26 @@
+.project-list {
+  display: grid;
+  row-gap: 2rem;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 5rem repeat(2, max-content);
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-family: 'Gotham Light', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+  }
+
+  // client work
+  &__item span {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #979797;
+  }
+}
