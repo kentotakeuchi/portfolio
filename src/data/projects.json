@@ -4,6 +4,19 @@
     "name": "yuzu ramen",
     "date": "2020.06",
     "url": "https://yuzurb-5d732.web.app/",
+    "desc": [
+      "Nullam ut cursus justo, in ullamcorper enim. Curabitur ac nibh a turpis ornare bibendum. Ut ac viverra nulla.  Vestibulum felis quam, viverra sed sodales egestas, finibus vitae libero. Integer elementum non ex eget iaculis. Fusce feugiat aliquet odio at facilisis. Donec pharetra ante ac hendrerit vestibulum. Maecenas ultricies sagittis turpis quis sodales. Nam risus odio, laoreet ut elit ac, viverra tempor purus.",
+      "Donec nibh orci, rhoncus eget pharetra sed, efficitur in neque.",
+      "Morbi auctor justo fringilla justo tempor, eu aliquet sem ullamcorper. Ut pretium consectetur nisl ac vehicula. Curabitur dignissim semper ante quis sollicitudin. Phasellus posuere massa vel nunc interdum, consectetur pharetra massa hendrerit. Ut vitae ex ligula."
+    ],
+    "mainImage": "https://images.unsplash.com/photo-1568018508399-e53bc8babdde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "subImages": [
+      "https://images.unsplash.com/photo-1557872943-16a5ac26437e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1526318896980-cf78c088247c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1558220831-9ad8f955fb9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1522957830388-0bea7607eed6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1486533803613-e0ce3d009238?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    ],
     "client": true
   },
   {
@@ -11,6 +24,9 @@
     "name": "random generator for soccer",
     "date": "2020.03",
     "url": "https://random-generator-for-soccer.web.app/",
+    "desc": "...",
+    "mainImage": "",
+    "subImages": ["", "", "", "", ""],
     "client": false
   },
   {
@@ -18,6 +34,9 @@
     "name": "kaga electronics (usa) inc.",
     "date": "2019.10",
     "url": "http://www.taxan.com/",
+    "desc": "...",
+    "mainImage": "",
+    "subImages": ["", "", "", "", ""],
     "client": true
   },
   {
@@ -25,6 +44,9 @@
     "name": "bank",
     "date": "2019.05",
     "url": "https://bank-of-something.herokuapp.com/",
+    "desc": "...",
+    "mainImage": "",
+    "subImages": ["", "", "", "", ""],
     "client": false
   },
   {
@@ -32,6 +54,9 @@
     "name": "saturdays art surf",
     "date": "2018.12",
     "url": "http://www.kentotakeuchi.com/saturdays-art-surf",
+    "desc": "...",
+    "mainImage": "",
+    "subImages": ["", "", "", "", ""],
     "client": false
   },
   {
@@ -39,6 +64,9 @@
     "name": "todo",
     "date": "2018.11",
     "url": "http://www.kentotakeuchi.com/todo",
+    "desc": "...",
+    "mainImage": "",
+    "subImages": ["", "", "", "", ""],
     "client": false
   },
   {
@@ -46,6 +74,9 @@
     "name": "clear",
     "date": "2018.10",
     "url": "http://www.kentotakeuchi.com/clear",
+    "desc": "...",
+    "mainImage": "",
+    "subImages": ["", "", "", "", ""],
     "client": false
   }
 ]

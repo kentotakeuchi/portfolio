@@ -1,0 +1,12 @@
+.contact {
+  display: grid;
+  row-gap: 2rem;
+
+  &__contact-icon-box {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    width: max-content;
+    transform: translateX(-1rem);
+  }
+}

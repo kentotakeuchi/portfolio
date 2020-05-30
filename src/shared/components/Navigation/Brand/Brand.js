@@ -13,7 +13,7 @@ const Brand = () => {
     ids.forEach((id) => {
       shuffleText(id);
     });
-  }, []);
+  }, [lng]);
 
   return (
     <div className="brand">

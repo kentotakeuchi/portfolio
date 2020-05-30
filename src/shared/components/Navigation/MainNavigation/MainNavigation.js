@@ -17,7 +17,7 @@ const MainNavigation = (props) => {
 
   useEffect(() => {
     shuffleText('copyright');
-  }, []);
+  }, [lng]);
 
   // Local state
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);

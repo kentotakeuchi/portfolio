@@ -2,11 +2,11 @@ import React from 'react';
 
 import './Image.scss';
 
-const Image = ({ alt, filename, contain, left, className, directory }) => (
+const Image = ({ alt, src, contain, left, className }) => (
   <img
     className={`image ${className}`}
     alt={alt}
-    src={`${process.env.REACT_APP_ASSET_URL}/img/${directory}/${filename}`}
+    src={src}
     style={{
       objectFit: contain ? 'contain' : 'cover',
       backgroundPosition: left ? 'left' : 'center',

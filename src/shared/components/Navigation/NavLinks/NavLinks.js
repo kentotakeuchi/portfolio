@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './NavLinks.scss';
-import { shuffleText, removeEvent } from '../../../util/suffleText';
+import { shuffleText } from '../../../util/suffleText';
 import { LanguageContext } from '../../../context/language-context';
 
 const NavLinks = ({ className }) => {
@@ -16,18 +16,12 @@ const NavLinks = ({ className }) => {
     ids.forEach((id) => {
       shuffleText(id);
     });
-
-    return () => {
-      ids.forEach((id) => {
-        removeEvent(id);
-      });
-    };
-  }, []);
+  }, [lng]);
 
   return (
     <ul className={`nav-links ${className}`}>
       <li>
-        <NavLink to="/" id="all-projects">
+        <NavLink to="/" exact id="all-projects">
           {lng.language === 'en' ? 'all projects' : '全プロジェクト'}
         </NavLink>
       </li>

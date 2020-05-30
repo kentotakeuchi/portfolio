@@ -1,0 +1,57 @@
+@import '../../../scss/variables.scss';
+
+.single-project {
+  display: grid;
+  row-gap: 5rem;
+
+  &__head-box {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  &__head-box span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $color-grey-dark;
+  }
+
+  &__name {
+    font-size: 5rem;
+    text-transform: capitalize;
+  }
+
+  &__date {
+  }
+
+  &__link-box {
+  }
+
+  &__main-img-box {
+  }
+
+  &__desc {
+    display: grid;
+    row-gap: 2rem;
+    overflow: hidden;
+  }
+
+  &__sub-img-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+
+  &__sub-img-box li:not(:nth-child(2)),
+  &__sub-img-box li:not(:nth-child(3)) {
+    grid-column: 1 / -1;
+  }
+
+  &__sub-img-box li:nth-child(2) {
+    grid-column: 1 / 2;
+  }
+
+  &__sub-img-box li:nth-child(3) {
+    grid-column: 2 / -1;
+  }
+}

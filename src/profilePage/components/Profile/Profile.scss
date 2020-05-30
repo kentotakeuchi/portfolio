@@ -1,0 +1,67 @@
+.profile {
+  display: grid;
+  row-gap: 5rem;
+
+  // header
+  &__head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    column-gap: 2rem;
+  }
+
+  &__img-box {
+    height: 50rem;
+  }
+
+  &__txt-box {
+    display: grid;
+    row-gap: 1rem;
+    height: max-content;
+    text-transform: capitalize;
+    overflow: hidden;
+  }
+
+  &__head-box {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  &__name {
+    font-size: 4rem;
+  }
+
+  &__job {
+    font-size: 2rem;
+  }
+
+  &__sub {
+    font-size: 1.5rem;
+  }
+
+  &__detail-box {
+    display: grid;
+    row-gap: 3rem;
+  }
+
+  &__detail-web li:not(:first-child) {
+    list-style: inside disc;
+  }
+
+  &__detail-soccer li:not(:first-child) {
+    list-style: inside disc;
+  }
+
+  &__detail-head {
+  }
+
+  // body
+  &__body {
+    overflow: hidden;
+  }
+
+  &__desc {
+    display: grid;
+    row-gap: 2rem;
+  }
+}

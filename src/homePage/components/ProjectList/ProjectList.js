@@ -1,7 +1,8 @@
 import React, { useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import './ProjectList.scss';
-import { shuffleText, removeEvent } from '../../../shared/util/suffleText';
+import { shuffleText } from '../../../shared/util/suffleText';
 import { LanguageContext } from '../../../shared/context/language-context';
 import PROJECTSDATA from '../../../data/projects.json';
 
@@ -43,6 +44,12 @@ const ProjectList = () => {
         body.style.height = '';
       });
     });
+
+    return () => {
+      body.style.backgroundImage = ``;
+      body.style.width = '';
+      body.style.height = '';
+    };
   }, []);
 
   useEffect(() => {
@@ -67,28 +74,16 @@ const ProjectList = () => {
     ids.forEach((id) => {
       shuffleText(id);
     });
-
-    return () => {
-      ids.forEach((id) => {
-        removeEvent(id);
-      });
-    };
-  }, []);
+  }, [lng]);
 
   const projectElements = PROJECTSDATA.map((project) => (
     <li key={project.id} className="project-list__item">
       <small className="project-list__date" id={`${project.id}-date`}>
         {project.date}
       </small>
-      <a
-        href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="project-list__name"
-        id={project.id}
-      >
+      <Link to={`/projects/${project.id}`} id={project.id}>
         {project.name}
-      </a>
+      </Link>
       {project.client && <span id="client">client work</span>}
     </li>
   ));

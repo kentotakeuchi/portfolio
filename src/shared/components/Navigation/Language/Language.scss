@@ -1,7 +1,9 @@
 @import '../../../../scss/variables.scss';
 
 .language {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 0.5rem;
   font-size: 1.2rem;
   color: $color-grey-dark-2;
   cursor: pointer;

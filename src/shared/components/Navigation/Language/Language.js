@@ -12,7 +12,7 @@ const Language = (props) => {
     ids.forEach((id) => {
       shuffleText(id);
     });
-  }, []);
+  }, [lng]);
 
   return (
     <ul className={`language ${props.className}`}>

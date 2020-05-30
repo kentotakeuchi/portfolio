@@ -8,18 +8,12 @@ export const shuffleText = (id) => {
   // Trigger effect
   shuffleText.start();
 
-  ['click'].forEach((event) => {
-    element.addEventListener(event, () => {
-      // Create instance
-      const shuffleText = new ShuffleText(element);
-      // Trigger effect
-      shuffleText.start();
-    });
-  });
-};
-
-// TODO: work?
-export const removeEvent = (id) => {
-  const element = document.getElementById(id);
-  element.removeEventListener('click', () => {});
+  // ['click'].forEach((event) => {
+  //   element.addEventListener(event, () => {
+  //     // Create instance
+  //     const shuffleText = new ShuffleText(element);
+  //     // Trigger effect
+  //     shuffleText.start();
+  //   });
+  // });
 };
