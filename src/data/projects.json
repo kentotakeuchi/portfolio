@@ -9,7 +9,7 @@
       "Donec nibh orci, rhoncus eget pharetra sed, efficitur in neque.",
       "Morbi auctor justo fringilla justo tempor, eu aliquet sem ullamcorper. Ut pretium consectetur nisl ac vehicula. Curabitur dignissim semper ante quis sollicitudin. Phasellus posuere massa vel nunc interdum, consectetur pharetra massa hendrerit. Ut vitae ex ligula."
     ],
-    "mainImage": "https://images.unsplash.com/photo-1568018508399-e53bc8babdde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "mainImage": "https://media.giphy.com/media/chhHeRXiOUjUArvYfR/source.mp4",
     "subImages": [
       "https://images.unsplash.com/photo-1557872943-16a5ac26437e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "https://images.unsplash.com/photo-1526318896980-cf78c088247c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
@@ -30,19 +30,31 @@
       "Donec nibh orci, rhoncus eget pharetra sed, efficitur in neque.",
       "Morbi auctor justo fringilla justo tempor, eu aliquet sem ullamcorper. Ut pretium consectetur nisl ac vehicula. Curabitur dignissim semper ante quis sollicitudin. Phasellus posuere massa vel nunc interdum, consectetur pharetra massa hendrerit. Ut vitae ex ligula."
     ],
-    "mainImage": "",
-    "subImages": ["", "", "", "", ""],
+    "mainImage": "https://media.giphy.com/media/SYWur8st6C2g9CDMjc/source.mp4",
+    "subImages": [
+      "https://lh3.googleusercontent.com/0qj8zDMSyTs1vaDzBN99SXgIjh0G4l9z4NuM-iIoDQdeWUCLLDJmqSieLiiSeBzYNWtOQNANsGCpvo3aoHzjFdHQ4CCTj90ed4AVrAH1g789LEBxvscQpyjcPebpnJoHh8nwYw4RS6_h03q0uGnkLfQVlQ4RJCD6navNfXr3uvdBadwzRjMcHiropBebuc4CJx3U2vjuhGkq422ZEJmaj6NB2pKab6WDeOhvnjiKKmDvnzfRILTRaGiQirWbDbUHJ6x-a3vGzx3LxQEbF3y6nHzSgKObUUOQUeY7UmJfrPZKnPnogdg2UMygvkVd6KO9OSZNX-c688gWXfNqG30MaK93cVEnHuKzEwj2CxCQxE62uWqsruFPV2DgHILEcRUxNsm7AGL-FbxnySuqahhmWnjolII7fYajM-ittu-6DHiaZGJ_ZN-4ThmVAYuJErcx8zJlHXNv8R3S1FyqD1F73q03OTsdcYcHyvfyRAmdS1kthQj9kxMMbDdLWheJZB26Xp5WN4JLrNlBOTxr0G6yHuKX8aH-KXYfhsQCw48HXcitxMKi4A0onivA-7mybJgEkbV3pYSCqKvUKyK5cqkxRsigXxsxCHC7jPgQLl0mnZFBJY7pbvBR3BGNsHQxKDCHo7OotdBYEYey5vslZ5XmHKH3BUk4qj69z32XjiSk-vULLglrm4kzZoEbevjK65c=w2560-h1440-no?authuser=0",
+      "https://lh3.googleusercontent.com/EzJC5q4rvQAccWqlVLrL9iuePZpCnNRT3ifJyOjrQuY5QUeygblZ-TC7vg1hOl1PMU4MmHuDDdxaOop632zU5zZUn6FMjcjPLt_wCOMWiKskyP57q5lU9BNe8HlUt5boT12VqxiadK7qz6j7JI_8tCpccgRQC3tF6GQ3l2Iwk5xo8_Sj96mXCubbDcFwhYAeNhnbezNi7H-v3tydmV1PWjKqrfz5bwvyF6I1FSWFQNclsHC8DBa9LOLuvwHiF6bFvBtlkM860rBLBygbYRaKa4OPPW6HBvfUVsctcRIjZJJzgy_GVndCcAN6n5FH8yTqbIxztHAajcxHlJLi6jrp64KU89u_qQa5oKQfpY7O-z41tC9yVeLOgX_tQFBPKHjl_Jg7pH_KlpOT6qrzJPVEnu7H7s2ppTue-GXGRiicnA89g_seWXgJi0JCW8mQh-KRCM7N3qP58DjRxonodx6NVV4jP2i5PQKCER4CglN88oldTm3-7nx34jI6zjlgiloR_yV_NwKDXukWfd82UG_5u5q_lpR8lpKf2ZsmRLiNaKeOK3oz0YljxviB9oi3vmr52GXQSU4lfW7ZRJ6OlB9Mavh4CA7ze-hLLWo3C8m9mTO_ktzXC4v9Nc6p7pmi-kysztK_H1UIgxCRg8gnP36wkQSsvOTSfFa6jTdawEoiARZjurxUmw-T13EzN_H_yx8=w1602-h1384-no?authuser=0",
+      "https://lh3.googleusercontent.com/b0d2ZoKUl46bfJwkz21cMhvGC20MNVE3z8jEBHQllJGg4FsUE_RAFWfFXSAWCOxN00S5ht89lTHxLLxppPqG3a9ViGrrSZs-MQoURO38cXOEYJdGBwOBKr378IAUcSqeElg7QTrWepWgkbMgzOD1pQqv8kRz28UwCFULjG-FUwqvWqo8vg1nVz4wwUu3lWmayu3zSAgt2OF8ECWeTjDbrejzUjGIBRIW4b0yECnn4TXsL5DB4pSZF0B7quK67vka_bGtxL-VTlDsIOBTa_GH9hqRFxu1wYioZFnFEo62tvbR2Ev_2FGmtLjw_jfqhExs1ynpY-lvidUP7U6SOKDnjELMqEDxAaTiN_wLUJ7THr_f_o5knDA6PcFqHd91kMWvKgfAVp_198Ucp4SQvKDs90PzKe0R1vpY_PuAb-CY9RU1DjrZjNs1ukirvwxhoELTlCNIejleC7aDGxs1bu4IBJXBd9hpCwtrnk2SlX35gdGTz-to7YIpUIBzOq3uZrQ8PnAV9K9avMBacBQ2KqMXlabaslFmzqp_H2cnAgowKG88Av0lcEt6mUAukMY7KWjENvw1JN5q5Oy8UDW6jl4CwjdUaYd6V0N-RV-frzyidCd9kJnkRKf6_LliN0R4U5ZZYXT_D0FTM6dG9Qi8zNp9OZSxTfPjp8XzNdDfjv5tqLMGxZVoGtRIAsgG-RDaUqc=w1600-h1384-no?authuser=0",
+      "https://lh3.googleusercontent.com/hOmmGeuB0JuKVyfpHTqMSpOMYrLSZEdm-7mJYsOFieot9qbfb0Ta7Y7iPssZPIvsaCRpCNETfo6eP5PtK8ceUeOpAVAzTN9DP1yBLL77wxHAh-EDpf6tjUMV7xRIZ5WQjHnzua8d73ht6j3fblcVDxoS4UP_m5WmoBUvqCX9MgB4iGIIDzPTl6K8u7h45bZyBYVEooRVncz6N0YlFgn4NNz1pSf2qqCHd6uELZDD1EEn52aTimmbeNMVPRAKoJhzQ8kp4Wj6y0lwmwctO2MlxhJPCknGW2XaJpFD5aAfyyITMDtFYXyZOEZIEf4GLW66C_Du08oU_pwrR9QWMQoXx-DwQBFsJ6l7W2ElXqXxjacJMVSqlj4oJ4ssOr7WgHYr8B28bwzqfomDcibDYESezZtDsNt9nYK9OCb2oTfjs-Cf5xhVzVWPGmL4ByExB81A_N9b4wC1Lan45n3KOcdQn70aNPjsMO6PDSz5GKx0aqPof1As0HMYq3I8MgH_BVHE7Lz6NRlO1mBEyONac1hyGG7RJ-DwN0RsiwMxd-d8GX0TOoPX6cr43U3Du30gMABeuuzI_8y2MdOSwL2y72ZpKSxVvbXPcZfFnWN4znoQYT13E3euelYd9awpLuSZrR-j9bZErxPGPhpLpYZ4SQyfhqZ0IVXAgk3C28xklpQVV9J2yuTxm9DApcxGQ1mY3Lg=w2560-h1438-no?authuser=0",
+      "https://lh3.googleusercontent.com/bURffA_PCdl-TuOpNcb6LFYfWOp1ylfZVGZfxEV7rKZB_ny76m7VNfCcP9n8l_J3Ax_5PiY_1LIKoBO303ILfBhAPkhgjmdHKgQvShZQAEG2wjE4J5NYwesPDbO_nND5F-7C0wkY8Chwmf0fFfbPfvsuAOfzNtZXTF69wZ5nD1QPC-5GDyhk8bpFBoBb9gsNDXIa8aq4_8EAcSq-eBV1GBGF3egaHadSvbS3bjbztrQe6RkcEHNZxMvu2qnFbxWHhCVn7EomNw0CUOqNfMRGMwqe4FYsJWwwtFv9MYRSp2FsV4a8fyg2mNhmrEPmclVWf9zGgiFRhd9Yt-VS_gTNVwHL9kjQg6t1JDrVjxlYtrqbek_rtyDrqVYAiaNGZrTV4ZxzfC-qLuNXi1NKVR5U50G3yq-7BMyudrgfCsWQ_eT_OqOApKpBTNB3nXwN0LRpLHpRCHhlN5hKgKUabQEfWVZaV1M9ZB_0mPQMNCiyG-UOVUJwE6mfeV-HjlpAH2q_ZjLNcjaIZR13KB8TFpFEELYn2mnYETG49U_9YVeMMeNM_PjW1XH7TsbfE4836uVD98K1J8IT75UWNvJBHrTDSiCo4K1f73lZvvCKd6UYSd1A6OlDN3eNWKl3nvGeu2NwlIOqMfaK6DGtAXMIp8F4TkhFQRI2R-zO5gsJag4P1sSBpsU9ju2ce8xnnb6yGug=w2560-h1442-no?authuser=0"
+    ],
     "client": false,
     "maintainance": false
   },
   {
     "id": "kaga-electronics-usa",
-    "name": "kaga electronics (usa) inc.",
+    "name": "kaga electronics (USA) inc.",
     "date": "2019.10",
     "url": "http://www.taxan.com/",
-    "desc": "...",
-    "mainImage": "",
-    "subImages": ["", "", "", "", ""],
+    "desc": ["", "", ""],
+    "mainImage": "https://media.giphy.com/media/S8BkvhXbcaiGzCMe86/source.mp4",
+    "subImages": [
+      "https://lh3.googleusercontent.com/zSC3kdduBvAEiiOwX9wjgwUQWd59lD404D_OfPcrSUYXj-524Ez_Lfmlc2kEs95e4tGMT43p___w3Dbd33qy5WWXCMTNOp4mRTecj0hhPEB63QPMZEA5kPtwJOpm9YrZJL6FvQgNysnO6pprI_w62lmdVZi99XlG_C0h0WY6woOFcJB6ORnd1sQ_drOwUuYEE_3pV044E2izVYp2wTReg40_IPqfFqNsKOVJMg1NS1YBhk0MCKfBUW0YS1xrMe2OiPG5K9uu2MMCPnJmmEFo9q_tunM3PJdLihdlgnsm6koSHTv5UeKO2f44mYDkD677CZYQJ3JTlGHCKmD8FRk1ZwGblEW_KHDtG599Jxp3z2xIPpsRupgBYTrSAt_Zm6WpYJ1MFDVGRAhNf-PsqSoi-QvaOYbRZZdK-eaLQdYwK3JTTjFMRi9e5I0zeL6NMN6wX7BEFdu_fl09YzBbCIw-1pyKz5EfA2UHImOXS_i_TKGHSrow7jfUl-Dx4g-wt2WZUXoNCtPyVcyikkXLNJEgfNo5EJbCLS6qiBguaeJsI-hC84cHr3KjPHksKM59DgKIPFx06WjMFFT9Oi-2q1f_RHLZNRyYHKasjpXZK6QXcnN0tGqCr2Ts1pGPHhI31G2nLsrFa0dfhgW0g67QYjK_23syudrc8E3_z3cWQmhYbqYw0jpa0KxVqos6j73Iv2k=w2560-h1442-no?authuser=0",
+      "https://lh3.googleusercontent.com/jSVi4w7dkLketwZN0rxCQs0nM24bWrU86WVgjtTAhWlbMZlW0yDsU9PqdEfU-Wl8SohkXzDayw4v26mWlAiMdVuag9gqtWagej3xaNh4VX0JoXjH4HUlqUW3HdqE9j9a5htaeo3MAkftwTz2ag5d7QnwlVF3L1zawqA2rhq0crtkG-iva1y8bLSZJGuSg5R4w5Tf4X5590TbDMEt-XqFdjTxU7JsQKKJS0u-bYxN2cST-4OV13UM8hGkF9163QhbzkNPzQznPRAI2yFtcqTo78GUzxut3uZTVBVrt1TQl6h-SjiHZzBE-UkaZiONh9ZeSYZTMwkQ7z3d8bwJL4iZ_jh1OgXi919C6-LWOlFTUd0pZQNEMRpgHQ93Gqjy_ZuTuaUEVr_aSpMmW0nWPqR7Yw8aJZgMaMJVAdN5_u0Kw3z12vo6SkpBItQwKF_ILO3nB1UyvNnj979OlNu6ZMywNKeVjVTBLiUH6kIUvqbJKWyPLq0m0TCwSQga-TUCZLfs4Fki-s40NZpJDj24IS6AOXWpIquTBMkzwWKT_Hp-ZuFxsdWR7Pbg30BurFCkHbt4x-l_a6p4iJ9HshhJ6uTFCvfjhfuXBvhXWpba2MlwaWWkNhSHDbZpX6DiXAZfr6zfBn05T7FYht8kMQ9QE-OO-NQu0RGyaUNlFe_kqTOzpUUlXSloByUYlDDco6U2ceQ=w1600-h1386-no?authuser=0",
+      "https://lh3.googleusercontent.com/QYtZXrR-rov6yVOXONNTKonaElrLP0QlJIZN68a6iEl2QJWPr65Fc6E1hSIJ9aa-fdAT4XwDqa3l5qt-8eAJ8AIGRME_idp5N3EN1dvnTVXrtPrhbLNfOhzTGuEe36W0Iofe-vlMSOLbrU8wcJAA8KuhGERBv0nZgfVq5unqQmczX123tC_ipucXB-Yo_0wgnAz-7Er3VDle8OodLfBf-XG9pbAZMfd_GxEOIA9-19YSdRKdQfHP_QaifBxhsTOxnvgnnmnkzilR0wbWqItu39i16LrCMIrYp7cb-jb0Vd2znUd0jDq9b0Jy8ipwfbfpG9XZEZqpm0o8Sf-z1k24UNIiU2Gb5BXeV1OErhC252EfZiAyfbA8VngCD0i50PUp4TJItCh5YzuCZr2QMM9MPVPQHgnDER6e25ogjuryiesU83s_lZ_YN2pY1Pk74ZNRVcUWamiVLzwymfdz1pluaG9etBkf4EZ_7bzRnDXR39orSpQ7MNAHH0pXPnvjI8GZa2G2JdSobXmYTTZUbRXfuMpl597evu6VO3Bvrv4NU8dAjI5S4CIlaaVawiA9MQZYF5jhhgpYb-JL1LQuM9QpiBYwoxbtGWfAAcWrPy3WkrE_jsOkBb73uNmLxi48_paD1Yg9iU_sqhEPzMiZcyEsYJvjbT14e5pJFi8MtQUgVzt61VC9nonYGpQdmuC7L-Y=w1598-h1384-no?authuser=0",
+      "https://lh3.googleusercontent.com/XLFCQQ87lnx6gI6pABSvhPpEU8mX6dTiMmxfUsX930YHlAKCf8iOThwStAwC9z6Kwo_KvVyXbgEJLCQJkJNJPaEqzp6gCma0rO8MRIqPlux44YkpftZ5UVjxeENrEFVySKsmNF0037pQLJvjMH7xwbdiM68WpBpQAx_nxV2_YoK8PRgiQgjsHFPhwklWUpts4NOyjmNex3DYdAR7AkB3ds32ktEkGL93QDzAakKvSIeX0I7eCtNGLW2gwpBc6u8mYkV0yOMHRabYFYHZs71e8Ms7fMKmlAAHusFole1-gXSRfSA0vAfItjGXyhzka-sHSxcNXbrgIgjhe8JRF35P0vYpjIuD7wzXKcIY4mB0gQZuKO7zHTNgFlL-_hyzBVc-pljP2jLRxaRPfdIGuWt8cGGMIAbZpSzkdMUI0NKW0mRyZiifN9a7amYTj_AmaCwLuQzFkqo_Ov1o0813NcEXeiySb15wxcEbPbkPUwBWzmmfxlLZ4pFTtTnHBazU_IlLoFdvV71ZkTyTNG2VLJl_XTIGHrF5scZxruCsAot54towofIHxW7emlhu-E6WcXdi18fwu30CVxfFBfBHZTlKYqdPLdQoE6TjcIZAMaylvE69Lf-gnc1ThjN4POVFeK_z_D-k1xbyqepeJaxJijNiy5KChWsuU6QiXoVCeXwpgCbzKXmDnhzy7P5ulrA2Rug=w2560-h1442-no?authuser=0",
+      "https://lh3.googleusercontent.com/WKe9Z4LP21DVi8fmZEpYhsP1zQTuzdDzm1WhRvCbOEet_coqT1XhyFllCFnwYqQ7WZuEKRMmWhr_4wObfQM9WSeyH2R0KAJV-nTLdUvgPC-ZbFouS2979i5rnxpKOm-LX1-NBsuEKMGddjtndMASiiW6YCzFda1-r2RiT7eEw7NqcGAbkqG_paQ1KK9vDeaWOq1bKzhYEF8fLWUjFkXPSVRcSP3tby45BJf9w2aB3AObHOSGtBJjmb-2-m2kYYldI1HCqxAXG2FKh4HpaxwRFUZ_J5ohCT7w8vn5SHKppddWH8eivfzK3dQvBgDnNdsReVt6d5sPFdIleqpfC8luUVsFniqkAxT0hsJzmrdUGzkTK9f87n1M27Fa5SM80vLFOfWiN-BZrvvIy0uf12b3DaYkVSaYwjihIzPgf1hhYtEfA8l2Si4QZz28KEH2TW7pCP6WYaS7ctgxmhWhvY3bfmrR9PbxrnQ2Ej1Ed2hHLUNkmPObgAl0KXagtHiVsZcRYsrUoN5nLHwUdcClqMsm6GPCw_YWcQqmomV01cY7Ol9K9j3eIrJl3og5dRMcV5_6kgQZpYoke0jK1kZK6COWEFuGuMdn4wvWnhyy49VE1TnGszkZPxXiP5WkP1X1jWqnAWJuONmh_UkARMjVfjo3LWLNdB_mytdHVBZm-fvMlKx7sLTM7ZusLmRrw8OgIIw=w2560-h1442-no?authuser=0"
+    ],
     "client": true,
     "maintainance": false
   },
@@ -51,7 +63,11 @@
     "name": "bank",
     "date": "2019.05",
     "url": "https://bank-of-something.herokuapp.com/",
-    "desc": "...",
+    "desc": [
+      "Bank is an application like flash card to consolidate your knowleadge you would like to memorize. you are able to store anything you would like to learn and review them at random anytime, anywhere.",
+      "Tips: If you are an iOS user, it's good to have iOS home screen icon for this app. Since the icon has been prepared, you are able to use the app like iOS app.",
+      "Open Safari browser > Click Action(Share) icon > Click Add to Home Screen > Save"
+    ],
     "mainImage": "",
     "subImages": ["", "", "", "", ""],
     "client": false,
@@ -88,7 +104,7 @@
       "",
       ""
     ],
-    "mainImage": "https://media.giphy.com/media/SVgGEhIo9TVpSYgAYj/giphy.mp4",
+    "mainImage": "https://media.giphy.com/media/SVgGEhIo9TVpSYgAYj/source.mp4",
     "subImages": [
       "https://lh3.googleusercontent.com/Zow9ikulqsCSS-MBIgfZwai1BdWduQS01dY6wtICc_p6Q__rG3DR_NZX4g_q6_aUyCU6iLdZujvZcFiq55Y9odZUMTO-O4-flmc0qt_gbjhNwoeaJLqH-f9ktWYgLl_08RI8BoQp0My4u92Mcn-HGZ6CrNZzk_67tn5eku9Rt07KR5vUz7hzAWzyn4YRVqkT-WNOWERXKE5C-nW14Ow3_i0PFY0LYEEyArU5KvHe2Ga-wO9Uh9g3039uKflX2U6Sw78YLIS5W9BKuDlnHQe3bVwU2LjsHEp4agC2xSV8eOjnGtHu6e3yPHT0p9UTkCTVT3jta1Ngk4Xl117pm4G97MDkdx2B-Q7tAjD_yH2BF6ULBLheNVdXkyZru_kVVf-EpPhoKR4qUGe5SfwW7OW277_fhhVQQWck47b5m7HzibhWwUyqFe7s6TtUjXVEHq2a1w-kJktlaao7AOpW9Lf9H496IJLB2dNl4SomwIOsbL9i6SQ96cri87-XlvlbEe39KumlSS69mXTIE3XLHhe8Or4BlZIBk0k1b7l4lVea7-Zay4B5AFV_TEW5yQoBKYId4VRJ10m6Rw_UZ5SbFW5GlYekxyqxKrhwYTctTH3gbdRqmkEGzalxEv1e03tTD9IgSW3e5nMBT6Xan_gZxLllFAyxbRzR9Cu5dmcO-llGF0ITW4ansYyHIlnuFeaVozo=w2560-h1440-no?authuser=0",
       "https://lh3.googleusercontent.com/Ah0dObU2CTFTDL-Ab44JE4qQ3iRS-dSlFO9Hv9uta6aZTRSEA3pO7PWjp4EJTjtSIBfOCqeapLTjbZXBTctHnR1Wk4wPFmy3ppRN773sJURCO13vU58ypIng-xGTlGnLiCTxdhgjeAQkWcsvyUuvOPa-AFcta_q8jWnU9sFK25R1zN77TQYkxytUzY8vV2MAWcJ-8UFg04U6H7BSYbOvstA5iogvv--FzhiK-QyI3-lrfY_KAgoKjPB6FL3KoeOtEb4gACMEwCdCDIeyym0zS2X-7y-8xYBueJNNHDB8NJr9YjCxCwX7Oru45rW8bo5ef2yBJg6dugkAhLRFElKptXnKIrZXaV4jFnTMObHB8YEwTgoqr5n-VnJA9ccmvbepjp03KXbuTuSAPG20vj1mrkbHT7sdCiNQboDaSgsyM0mj47Ex-3WO85YfrZshoVGklz2TvyRYAYYhspVu3BJZSZy72xqgPRAFHUa7gq9nHJCDD-ARsMEWUETaxv4RZvdq7p8Ktlu1OGliPEUnZJ6M8nDClFAf56CzI72cYuHylviOhIQf-7o5ICFKDESPRUjmXL0-3X4fz7jb6dQ98P2TshToGPRsNjz9pX54CbJZxq6KrQNksvXkCLThxpk1qILUIu1NaMpsRwkqxNxf7vnUoQeGP03bxKERYUmXfiyW7xq6MrZOPCcOZOVOEck-4Vo=w1596-h1384-no?authuser=0",
@@ -113,7 +129,7 @@
       "Since each of user have a different story for each item, users can share background of their items.",
       "Moreover, users can give away, sell or buy items from their friends."
     ],
-    "mainImage": "https://media.giphy.com/media/WUsbSGv4duVQ4yOnAZ/giphy.mp4",
+    "mainImage": "https://media.giphy.com/media/WUsbSGv4duVQ4yOnAZ/source.mp4",
     "subImages": [
       "https://lh3.googleusercontent.com/qtG-rJn6cxsLIQltj22yy8t4LBDgmIsgCmkWCaaGPBSYU_nTP1icTCYk2D6a27wRwKneGxJQ4MtwmGa-XwXiZYs5uIokLn49bz1DWXl8d21Q8HM0lbcnYccAkAeWnvI56pOkNqwFKo9SA9eZLQxNNyiGnvWYeM3_S4qAg_lvIRepxaBCMAtRNDRQi4dIwXjnoLZNlVKAW8sqaUiOSL__jK_8c5eFmsPwhMj0rOVvCR0c82lHzRc6uCR068rNMWi_M9-4lBfcDbX7J7I5jvlZAoGs4czTuQDwlkXsBPsnNDgpZr6qEdzT_OjmhganT2sO7PIGy2XJczj2eJ-vxcd2bFSg6e26xuyanCtb1SXWlN26XTO_kxJwHeWfjrrhBEK1M5MNjZDrLG8XQaISUZSYg6-nxzxrWCrcUKzYLz0JHLp0Pev1KZ95TBU4FNDblVxOC7LfhFnYTitfVO8fS4nUE-kIwVJN9b-ompaAuAR9ZxWZu5mgU0AEQqODAAfFXWBQEx7dEQccXO7xSCtT6J9xzXbROy_eUBQCuUTmI9OZD2lrMXzHTGuYjtidI8gIhnlFGC9-JVxaVTqQ7t4MNqmEedtXafbWW-p-QZ5jaNvrLpg1ZZTHq_xnXr6YCXzAeTLUBx-L3xz6jC5s8GKDHW_awWF8YTLHw4lXJ_lgMP2sje7W6L5egM41Dr8oTErPHzQ=w2560-h1442-no?authuser=0",
       "https://lh3.googleusercontent.com/K0w9F_KlAQbrCi0SzPNu2KTkTOKpzDkrTDXi1WLebNOmw0mb_g0VAxEHi0xLOb9N9_grf-o_2om32edasMhmf7k13ZhvAaTm7aO7Gd8Boh9nN3fowzyWc6xDjHPbGWr0q23zp1OV6eatqIFTH6jYdgpIeg58BJkCziW60-wMDeCMAoyxzUv1xXbTbhARQJmLkzh4eNPXCwjG7xCGj0w1EoO0UYiMUTIgP9IUYJrmVAg25BEGGjy2bR8nJfhpoBhqwi8XhTh0OLJt9GRwzz-WYMsjv4lzy7gki0xtMAOABRld25bsjRWGB-Sfff7l0enPKokwQTeuhmCK9gHhHCNwST73j80lsK2_Vhj3sMxX4UKSdPoCTr3do7u2SzVwem8UuOVCgvwZaeI2llep-dXUVuD5TeE0WingY1X8iFviZ9zwMymkfBVfrG8FAtuR_y_l3BscTwKaJBSVS1NLJbBwsLXsUEJzebLnI1w5UgpbS1XW5Jdp3jMBqGnmOVqoPQkwRgGq8uXYAD4xpaj4oM75D8nTG8NWD7QXzRYenZboS0-6YVP1bZ7piCAB1tq48MIyysf3znloT5ndIZdYAgbi5FMMewBBAOL1TzC5_GLCwdOkOvnaQ-gACbgf3iI0xErIbo9bDNeNPth6mM6Wu2O7GdM2utCKU2bCAPS8-Gp59Ju_JexAwh6Wlh-Amao8Ghs=w2560-h1440-no?authuser=0",
