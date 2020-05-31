@@ -6,13 +6,12 @@ import Backdrop from '../Backdrop/Backdrop';
 
 const ZoomableImage = ({
   alt,
-  filename,
+  src,
   contain,
   left,
   className,
   scale,
   height,
-  directory,
 }) => {
   const [isZoom, setIsZoom] = useState(false);
 
@@ -29,7 +28,7 @@ const ZoomableImage = ({
       <img
         className={`zoomable-image ${className} ${isZoom ? 'zoomed' : ''}`}
         alt={alt}
-        src={`${process.env.REACT_APP_ASSET_URL}/img/${directory}/${filename}`}
+        src={src}
         style={{
           objectFit: contain ? 'contain' : 'cover',
           backgroundPosition: left ? 'left' : 'center',

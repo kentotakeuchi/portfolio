@@ -69,6 +69,7 @@ const ProjectList = () => {
       'todo',
       'clear',
       'client',
+      'maintainance',
     ];
 
     ids.forEach((id) => {
@@ -76,7 +77,7 @@ const ProjectList = () => {
     });
   }, [lng]);
 
-  const projectElements = PROJECTSDATA.map((project) => (
+  const projectElements = PROJECTSDATA.map((project, i) => (
     <li key={project.id} className="project-list__item">
       <small className="project-list__date" id={`${project.id}-date`}>
         {project.date}
@@ -84,7 +85,8 @@ const ProjectList = () => {
       <Link to={`/projects/${project.id}`} id={project.id}>
         {project.name}
       </Link>
-      {project.client && <span id="client">client work</span>}
+      {project.client && <span id={`client`}>client work</span>}
+      {project.maintainance && <span id={`maintainance`}>maintainance..</span>}
     </li>
   ));
 

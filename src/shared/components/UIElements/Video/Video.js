@@ -6,9 +6,10 @@ const Video = ({
   width,
   height,
   controls,
+  autoPlay,
+  loop,
   className,
-  directory,
-  filename,
+  src,
   type,
 }) => (
   <video
@@ -16,13 +17,11 @@ const Video = ({
     width={width}
     height={height}
     controls={controls}
+    autoPlay={autoPlay}
+    loop={loop}
     muted
   >
-    <source
-      className={`video__source ${className}`}
-      src={`${process.env.REACT_APP_ASSET_URL}/video/${directory}/${filename}`}
-      type={type}
-    />
+    <source className={`video__source ${className}`} src={src} type={type} />
     Sorry, your browser doesn't support embedded videos.
   </video>
 );
