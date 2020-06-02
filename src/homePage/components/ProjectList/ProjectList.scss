@@ -70,6 +70,7 @@
   &__desc {
     @include respond(phone) {
       margin-top: 1rem;
+      overflow: hidden;
     }
   }
 }

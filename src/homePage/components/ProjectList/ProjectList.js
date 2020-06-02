@@ -59,7 +59,7 @@ const ProjectList = () => {
   }, [mq]);
 
   useEffect(() => {
-    const ids = [
+    let ids = [
       'yuzu-ramen-date',
       'random-generator-for-soccer-date',
       'kaga-electronics-usa-date',
@@ -78,10 +78,25 @@ const ProjectList = () => {
       'maintainance',
     ];
 
+    // Mobile
+    if (mq.matches) {
+      ids = ids.concat([
+        'project-list__desc-0',
+        'project-list__desc-1',
+        'project-list__desc-2',
+        'project-list__desc-3',
+        'project-list__desc-4',
+        'project-list__desc-5',
+        'project-list__desc-6',
+      ]);
+    }
+
+    console.log({ ids });
+
     ids.forEach((id) => {
       shuffleText(id);
     });
-  }, [lng]);
+  }, [lng, mq]);
 
   let projectElements;
   // Desktop
@@ -117,10 +132,10 @@ const ProjectList = () => {
             {project.maintainance && (
               <span id={`maintainance`}>maintainance..</span>
             )}
-            <p className="project-list__desc">{`${project.desc.slice(
-              0,
-              1
-            )}...`}</p>
+            <p
+              className="project-list__desc"
+              id={`project-list__desc-${i}`}
+            >{`${project.desc.slice(0, 1)}...`}</p>
           </div>
         </Link>
       </li>
