@@ -45,22 +45,6 @@ const Profile = () => {
               soccer surfing
             </h4>
           </div>
-          {/* <div className="profile__detail-box">
-            <ul className="profile__detail-web">
-              <li className="profile__detail-head">web development</li>
-              <li>JavaScript (MERN)</li>
-              <li>react native (learning..)</li>
-              <li>data structure & algolithms (learning..)</li>
-            </ul>
-            <ul className="profile__detail-soccer">
-              <li className="profile__detail-head">soccer</li>
-              <li>CAM, CDM</li>
-              <li>pass soccer</li>
-              <li>scoring (practicing..)</li>
-              <li>ronaldinho</li>
-              <li>zidan</li>
-            </ul>
-          </div> */}
         </div>
       </header>
 

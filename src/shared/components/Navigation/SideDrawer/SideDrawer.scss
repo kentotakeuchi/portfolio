@@ -3,7 +3,7 @@
   width: 25rem;
   max-width: 65%;
   height: 100%;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 300;
   background-color: white;
@@ -12,15 +12,7 @@
 
   &__nav {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-content: space-between;
-    height: 100%;
-    text-transform: uppercase;
-  }
-
-  &__nav--admin {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     align-content: space-between;
     height: 100%;
     text-transform: uppercase;
@@ -32,7 +24,7 @@
 
 // CSSTransition
 .slide-enter {
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: 0.3s linear;
   opacity: 0;
 }
@@ -46,6 +38,6 @@
   opacity: 1;
 }
 .slide-exit-active {
-  transform: translateX(-100%);
+  transform: translateX(100%);
   opacity: 0;
 }

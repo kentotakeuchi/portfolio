@@ -1,6 +1,12 @@
+@import '../../../scss/mixin.scss';
+
 .project-list {
   display: grid;
   row-gap: 2rem;
+
+  @include respond(phone) {
+    row-gap: 5rem;
+  }
 
   &__item {
     display: grid;
@@ -10,6 +16,39 @@
     column-gap: 3rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+
+    @include respond(phone) {
+      grid-template-columns: none;
+      width: 100%;
+    }
+  }
+
+  @include respond(phone) {
+    &__item a {
+      display: grid;
+    }
+  }
+
+  @include respond(phone) {
+    &__item img {
+      height: 40rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__text-box {
+      display: grid;
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  @include respond(phone) {
+    &__name {
+      font-size: 3rem;
+      overflow: hidden;
+    }
   }
 
   &__date {
@@ -22,5 +61,15 @@
     font-size: 1.1rem;
     font-style: italic;
     color: #979797;
+
+    @include respond(phone) {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__desc {
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
   }
 }

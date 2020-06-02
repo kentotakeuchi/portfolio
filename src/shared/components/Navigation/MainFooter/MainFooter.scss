@@ -7,5 +7,9 @@
   &__copyright {
     font-size: $font-size-small;
     text-transform: uppercase;
+
+    @include respond(phone) {
+      padding-left: 2rem;
+    }
   }
 }

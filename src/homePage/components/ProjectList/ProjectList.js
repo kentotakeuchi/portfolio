@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import './ProjectList.scss';
+import Image from '../../../shared/components/UIElements/Image/Image';
 import { shuffleText } from '../../../shared/util/suffleText';
 import { LanguageContext } from '../../../shared/context/language-context';
 import PROJECTSDATA from '../../../data/projects.json';
@@ -20,37 +21,42 @@ const images = [
 const ProjectList = () => {
   const lng = useContext(LanguageContext);
 
+  const mq = window.matchMedia('(max-width: 37.5em)');
+
   useEffect(() => {
-    const body = document.querySelector('body');
-    const yuzu = document.getElementById('yuzu-ramen');
-    const random = document.getElementById('random-generator-for-soccer');
-    const kaga = document.getElementById('kaga-electronics-usa');
-    const bank = document.getElementById('bank');
-    const saturdays = document.getElementById('saturdays-art-surf');
-    const todo = document.getElementById('todo');
-    const clear = document.getElementById('clear');
+    // Desktop only
+    if (!mq.matches) {
+      const body = document.querySelector('body');
+      const yuzu = document.getElementById('yuzu-ramen');
+      const random = document.getElementById('random-generator-for-soccer');
+      const kaga = document.getElementById('kaga-electronics-usa');
+      const bank = document.getElementById('bank');
+      const saturdays = document.getElementById('saturdays-art-surf');
+      const todo = document.getElementById('todo');
+      const clear = document.getElementById('clear');
 
-    const elements = [yuzu, random, kaga, bank, saturdays, todo, clear];
+      const elements = [yuzu, random, kaga, bank, saturdays, todo, clear];
 
-    elements.forEach((el, i) => {
-      el.addEventListener('mouseover', () => {
-        body.style.backgroundImage = `url(${images[i]})`;
-        body.style.width = '100vw';
-        body.style.height = '100vh';
+      elements.forEach((el, i) => {
+        el.addEventListener('mouseover', () => {
+          body.style.backgroundImage = `url(${images[i]})`;
+          body.style.width = '100vw';
+          body.style.height = '100vh';
+        });
+        el.addEventListener('mouseout', () => {
+          body.style.backgroundImage = ``;
+          body.style.width = '';
+          body.style.height = '';
+        });
       });
-      el.addEventListener('mouseout', () => {
+
+      return () => {
         body.style.backgroundImage = ``;
         body.style.width = '';
         body.style.height = '';
-      });
-    });
-
-    return () => {
-      body.style.backgroundImage = ``;
-      body.style.width = '';
-      body.style.height = '';
-    };
-  }, []);
+      };
+    }
+  }, [mq]);
 
   useEffect(() => {
     const ids = [
@@ -77,18 +83,49 @@ const ProjectList = () => {
     });
   }, [lng]);
 
-  const projectElements = PROJECTSDATA.map((project, i) => (
-    <li key={project.id} className="project-list__item">
-      <small className="project-list__date" id={`${project.id}-date`}>
-        {project.date}
-      </small>
-      <Link to={`/projects/${project.id}`} id={project.id}>
-        {project.name}
-      </Link>
-      {project.client && <span id={`client`}>client work</span>}
-      {project.maintainance && <span id={`maintainance`}>maintainance..</span>}
-    </li>
-  ));
+  let projectElements;
+  // Desktop
+  if (!mq.matches) {
+    projectElements = PROJECTSDATA.map((project, i) => (
+      <li key={project.id} className="project-list__item">
+        <small className="project-list__date" id={`${project.id}-date`}>
+          {project.date}
+        </small>
+        <Link to={`/projects/${project.id}`} id={project.id}>
+          {project.name}
+        </Link>
+        {project.client && <span id={`client`}>client work</span>}
+        {project.maintainance && (
+          <span id={`maintainance`}>maintainance..</span>
+        )}
+      </li>
+    ));
+    // Mobile
+  } else {
+    projectElements = PROJECTSDATA.map((project, i) => (
+      <li key={project.id} className="project-list__item">
+        <Link to={`/projects/${project.id}`}>
+          <Image src={images[i]} alt={project.name} />
+          <div className="project-list__text-box">
+            <h3 className="project-list__name" id={project.id}>
+              {project.name}
+            </h3>
+            <small className="project-list__date" id={`${project.id}-date`}>
+              {project.date}
+            </small>
+            {project.client && <span id={`client`}>client work</span>}
+            {project.maintainance && (
+              <span id={`maintainance`}>maintainance..</span>
+            )}
+            <p className="project-list__desc">{`${project.desc.slice(
+              0,
+              1
+            )}...`}</p>
+          </div>
+        </Link>
+      </li>
+    ));
+  }
 
   return <ul className="project-list">{projectElements}</ul>;
 };

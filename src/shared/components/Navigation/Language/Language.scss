@@ -24,6 +24,8 @@
   }
 
   &--side-drawer {
+    align-self: end;
+    width: max-content;
     font-size: 12px;
   }
 }

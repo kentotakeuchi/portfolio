@@ -1,3 +1,5 @@
+@import '../../../scss/mixin.scss';
+
 .profile {
   display: grid;
   row-gap: 5rem;
@@ -8,6 +10,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: column;
     column-gap: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: none;
+      grid-auto-flow: row;
+      row-gap: 1rem;
+    }
   }
 
   &__img-box {
@@ -20,6 +28,10 @@
     height: max-content;
     text-transform: capitalize;
     overflow: hidden;
+
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
   }
 
   &__head-box {
@@ -39,25 +51,13 @@
     font-size: 1.5rem;
   }
 
-  &__detail-box {
-    display: grid;
-    row-gap: 3rem;
-  }
-
-  &__detail-web li:not(:first-child) {
-    list-style: inside disc;
-  }
-
-  &__detail-soccer li:not(:first-child) {
-    list-style: inside disc;
-  }
-
-  &__detail-head {
-  }
-
   // body
   &__body {
     overflow: hidden;
+
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
   }
 
   &__desc {

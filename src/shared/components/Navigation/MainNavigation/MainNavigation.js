@@ -16,7 +16,11 @@ const MainNavigation = (props) => {
   const lng = useContext(LanguageContext);
 
   useEffect(() => {
-    shuffleText('copyright');
+    const ids = ['copyright'];
+
+    ids.forEach((id) => {
+      shuffleText(id);
+    });
   }, [lng]);
 
   // Local state
@@ -38,6 +42,9 @@ const MainNavigation = (props) => {
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
       <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
         <nav className="side-drawer__nav">
+          <h3 className="brand__name" id="brand-name--side-drawer">
+            kento takeuchi
+          </h3>
           <NavLinks className="nav-links--side-drawer" />
           <SNS className="sns--side-drawer" width="15" height="15" />
           <Language className="language--side-drawer" />

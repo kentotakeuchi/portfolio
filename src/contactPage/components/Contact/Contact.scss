@@ -1,6 +1,12 @@
+@import '../../../scss/mixin.scss';
+
 .contact {
   display: grid;
   row-gap: 2rem;
+
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
 
   &__contact-icon-box {
     display: grid;

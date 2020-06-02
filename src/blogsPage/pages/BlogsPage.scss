@@ -1,2 +1,7 @@
+@import '../../scss/mixin.scss';
+
 .blogs-page {
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
 }
