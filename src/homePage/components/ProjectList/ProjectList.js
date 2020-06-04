@@ -27,7 +27,7 @@ const ProjectList = () => {
     // Desktop only
     if (!mq.matches) {
       const body = document.querySelector('body');
-      const yuzu = document.getElementById('yuzu-ramen');
+      // const yuzu = document.getElementById('yuzu-ramen');
       const random = document.getElementById('random-generator-for-soccer');
       const kaga = document.getElementById('kaga-electronics-usa');
       const bank = document.getElementById('bank');
@@ -35,7 +35,7 @@ const ProjectList = () => {
       const todo = document.getElementById('todo');
       const clear = document.getElementById('clear');
 
-      const elements = [yuzu, random, kaga, bank, saturdays, todo, clear];
+      const elements = [/*yuzu,*/ random, kaga, bank, saturdays, todo, clear];
 
       elements.forEach((el, i) => {
         el.addEventListener('mouseover', () => {
@@ -60,14 +60,14 @@ const ProjectList = () => {
 
   useEffect(() => {
     let ids = [
-      'yuzu-ramen-date',
+      // 'yuzu-ramen-date',
       'random-generator-for-soccer-date',
       'kaga-electronics-usa-date',
       'bank-date',
       'saturdays-art-surf-date',
       'todo-date',
       'clear-date',
-      'yuzu-ramen',
+      // 'yuzu-ramen',
       'random-generator-for-soccer',
       'kaga-electronics-usa',
       'bank',
