@@ -7,6 +7,10 @@
   letter-spacing: 0.2rem;
   color: $color-grey-dark;
 
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-primary-light;
+  }
+
   // Main Header
   &--main-header {
     display: grid;

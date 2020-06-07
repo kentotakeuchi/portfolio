@@ -1,0 +1,60 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixin.scss';
+
+.post-card {
+  &__article {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  &__category {
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: grey;
+  }
+
+  &__container {
+    display: grid;
+    row-gap: 2rem;
+  }
+
+  &__main-image-box {
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      display: grid;
+    }
+  }
+
+  &__title {
+    font-family: 'Miller Banner', 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: capitalize;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  &__date {
+    font-family: 'Miller Banner', 'Times New Roman', serif;
+  }
+
+  &__body {
+    display: grid;
+    row-gap: 1rem;
+
+    & > svg {
+      justify-self: end;
+    }
+  }
+
+  &__description {
+    font-family: 'Gotham Light', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+}

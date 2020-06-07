@@ -19,6 +19,12 @@
     left: 0;
     padding: 3rem 0 2rem 2rem;
     width: 100vw;
+    z-index: 100;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-primary;
+      background-color: $color-dark-black;
+    }
   }
 
   &__name {
@@ -37,6 +43,10 @@
     @include respond(phone) {
       font-size: 1rem;
       transform: translateY(0);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-primary-light;
     }
   }
 }

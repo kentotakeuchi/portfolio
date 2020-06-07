@@ -21,12 +21,17 @@
       position: fixed;
       top: 3rem;
       right: 2rem;
+      z-index: 100;
 
       & span {
         display: block;
         width: 3.5rem;
         height: 0.5px;
         background: $color-grey-dark;
+
+        @media (prefers-color-scheme: dark) {
+          background: $color-dark-primary-light;
+        }
       }
     }
   }
@@ -49,5 +54,6 @@
     position: fixed;
     top: 10rem;
     right: 5rem;
+    z-index: 210;
   }
 }

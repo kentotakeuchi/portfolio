@@ -4,22 +4,31 @@ import { Link } from 'react-router-dom';
 import './ProjectList.scss';
 import Image from '../../../shared/components/UIElements/Image/Image';
 import { shuffleText } from '../../../shared/util/suffleText';
+import { shuffleArray } from '../../../shared/util/suffleArray';
 import { LanguageContext } from '../../../shared/context/language-context';
 import PROJECTSDATA from '../../../data/projects.json';
 
 // TODO: temp
-const images = [
-  'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+let images = [
   'https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
   'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
   'https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
   'https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
   'https://images.unsplash.com/photo-1494200483035-db7bc6aa5739?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
   'https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1529133846809-9f4ace724c4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1494005612480-90f50fd9376f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1584377922292-14d3cc500309?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 ];
 
+shuffleArray(images);
+
+// TODO: temp comment out "yuzu"
 const ProjectList = () => {
   const lng = useContext(LanguageContext);
+  const { language } = lng;
 
   const mq = window.matchMedia('(max-width: 37.5em)');
 
@@ -87,7 +96,7 @@ const ProjectList = () => {
         'project-list__desc-3',
         'project-list__desc-4',
         'project-list__desc-5',
-        'project-list__desc-6',
+        // 'project-list__desc-6',
       ]);
     }
 
@@ -101,17 +110,23 @@ const ProjectList = () => {
   let projectElements;
   // Desktop
   if (!mq.matches) {
-    projectElements = PROJECTSDATA.map((project, i) => (
+    projectElements = PROJECTSDATA.map((project) => (
       <li key={project.id} className="project-list__item">
         <small className="project-list__date" id={`${project.id}-date`}>
           {project.date}
         </small>
         <Link to={`/projects/${project.id}`} id={project.id}>
-          {project.name}
+          {language === 'en' ? project.name : project.name__jp}
         </Link>
-        {project.client && <span id={`client`}>client work</span>}
+        {project.client && (
+          <span id={`client`}>
+            {language === 'en' ? 'client work' : 'クライアントワーク'}
+          </span>
+        )}
         {project.maintainance && (
-          <span id={`maintainance`}>maintainance..</span>
+          <span id={`maintainance`}>
+            {language === 'en' ? 'maintainance..' : 'メンテナンス中'}
+          </span>
         )}
       </li>
     ));
@@ -123,19 +138,26 @@ const ProjectList = () => {
           <Image src={images[i]} alt={project.name} />
           <div className="project-list__text-box">
             <h3 className="project-list__name" id={project.id}>
-              {project.name}
+              {language === 'en' ? project.name : project.name__jp}
             </h3>
             <small className="project-list__date" id={`${project.id}-date`}>
               {project.date}
             </small>
-            {project.client && <span id={`client`}>client work</span>}
-            {project.maintainance && (
-              <span id={`maintainance`}>maintainance..</span>
+            {project.client && (
+              <span id={`client`}>
+                {language === 'en' ? 'client work' : 'クライアントワーク'}
+              </span>
             )}
-            <p
-              className="project-list__desc"
-              id={`project-list__desc-${i}`}
-            >{`${project.desc.slice(0, 1)}...`}</p>
+            {project.maintainance && (
+              <span id={`maintainance`}>
+                {language === 'en' ? 'maintainance..' : 'メンテナンス中'}
+              </span>
+            )}
+            <p className="project-list__desc" id={`project-list__desc-${i}`}>
+              {language === 'en'
+                ? `${project.desc.slice(0, 1)}...`
+                : `${project.desc__jp.slice(0, 1)}...`}
+            </p>
           </div>
         </Link>
       </li>

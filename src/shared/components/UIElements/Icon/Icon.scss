@@ -1,0 +1,9 @@
+@import '../../../../scss/variables.scss';
+
+.icon {
+  @media (prefers-color-scheme: dark) {
+    & use {
+      fill: $color-dark-primary-light;
+    }
+  }
+}

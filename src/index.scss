@@ -65,6 +65,11 @@ body {
   background-color: $color-white;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-primary;
+    background-color: $color-dark-black;
+  }
 }
 
 h1,
@@ -94,13 +99,27 @@ a {
   display: block;
   color: inherit;
   text-decoration: none;
-
-  &:hover,
+  p &:hover,
   :active {
     color: $color-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-primary;
+    }
   }
 
   &.active {
     color: $color-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-primary;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img,
+  video {
+    filter: brightness(80%);
   }
 }

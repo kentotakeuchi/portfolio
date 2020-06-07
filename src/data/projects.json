@@ -2,12 +2,18 @@
   {
     "id": "random-generator-for-soccer",
     "name": "random generator for soccer",
+    "name__jp": "ランダムジェネレーター（サッカー用）",
     "date": "2020.03",
     "url": "https://random-generator-for-soccer.web.app/",
     "desc": [
-      "Nullam ut cursus justo, in ullamcorper enim. Curabitur ac nibh a turpis ornare bibendum. Ut ac viverra nulla.  Vestibulum felis quam, viverra sed sodales egestas, finibus vitae libero. Integer elementum non ex eget iaculis. Fusce feugiat aliquet odio at facilisis. Donec pharetra ante ac hendrerit vestibulum. Maecenas ultricies sagittis turpis quis sodales. Nam risus odio, laoreet ut elit ac, viverra tempor purus.",
-      "Donec nibh orci, rhoncus eget pharetra sed, efficitur in neque.",
-      "Morbi auctor justo fringilla justo tempor, eu aliquet sem ullamcorper. Ut pretium consectetur nisl ac vehicula. Curabitur dignissim semper ante quis sollicitudin. Phasellus posuere massa vel nunc interdum, consectetur pharetra massa hendrerit. Ut vitae ex ligula."
+      "Random generator helps you to check behind you before receiving a ball in your training.",
+      "Version 1 of the app displays color and digit at random.",
+      "While it is extremely simple, I have used it the most in apps I have ever developed."
+    ],
+    "desc__jp": [
+      "ランダムジェネレーターは練習中、ボールを受ける前に、後ろを確認する習慣を獲得する手助けをします。",
+      "バージョン1は、ランダムに色と数字を表示します。",
+      "驚くほどシンプルなアプリですが、私が開発したアプリの中で最もよく使っています。"
     ],
     "mainImage": "https://media.giphy.com/media/SYWur8st6C2g9CDMjc/source.mp4",
     "subImages": [
@@ -23,9 +29,19 @@
   {
     "id": "kaga-electronics-usa",
     "name": "kaga electronics (USA) inc.",
+    "name__jp": "加賀電子株式会社（USA）",
     "date": "2019.10",
     "url": "http://www.taxan.com/",
-    "desc": ["", "", ""],
+    "desc": [
+      "Kaga Electronics (USA) Inc. is an independent general trading company in U.S. that specializes in electronics",
+      "I was responsible for renewing their website from planning to deploying.",
+      "As for implementation, I developed front-end(visitor + administrator UI) and back-end."
+    ],
+    "desc__jp": [
+      "加賀電子株式会社（USA）はアメリカで事業展開しているエレクトロニクスを専門とする独立系総合商社です。",
+      "私は、彼らのウェブサイトのリニューアルを、プランニングからウェブサイトをオンラインに展開するところまで、全ての過程でお手伝いさせていただきました。",
+      "実装に関しては、フロントエンド（訪問者と管理者画面）、バックエンドを実装させていただきました。"
+    ],
     "mainImage": "https://media.giphy.com/media/S8BkvhXbcaiGzCMe86/source.mp4",
     "subImages": [
       "https://i.imgur.com/0qNANaq.png",
@@ -40,27 +56,45 @@
   {
     "id": "bank",
     "name": "bank",
+    "name__jp": "バンク",
     "date": "2019.05",
     "url": "https://bank-of-something.herokuapp.com/",
     "desc": [
-      "Bank is an application like flash card to consolidate your knowleadge you would like to memorize. you are able to store anything you would like to learn and review them at random anytime, anywhere.",
+      "Bank is an app like flash card to consolidate your knowleadge you would like to memorize. you are able to store anything you would like to learn and review them at random anytime, anywhere.",
       "Tips: If you are an iOS user, it's good to have iOS home screen icon for this app. Since the icon has been prepared, you are able to use the app like iOS app.",
-      "Open Safari browser > Click Action(Share) icon > Click Add to Home Screen > Save"
+      "Open Safari browser > Tap Action(Share) icon > Tap Add to Home Screen > Save"
     ],
-    "mainImage": "",
-    "subImages": ["", "", "", "", ""],
+    "desc__jp": [
+      "バンクは、あなたが記憶したい知識を、脳に定着させることを助ける、フラッシュカードのようなアプリです。あなたは脳に定着させたい全ての情報を保存し、いつでも、どこでもそれをランダムに確認することができます。",
+      "ヒント：　もしあなたがiOSユーザーならば、iOSアプリのようにホーム画面にバンクを置いておくことができます。バンクのアイコンは用意してありますので、まるでiOSアプリのように利用することができます。",
+      "Safariのブラウザを開く　→　アクション（シェア）アイコンをタップ　→　ホーム画面に加えるをタップ　→　保存"
+    ],
+    "mainImage": "https://media.giphy.com/media/PhZnR8FF0ykJFk54mq/source.mp4",
+    "subImages": [
+      "https://i.imgur.com/A4VdAwv.png",
+      "https://i.imgur.com/o7nW6xu.png",
+      "https://i.imgur.com/mfGjtyA.png",
+      "https://i.imgur.com/vFMOmhD.png",
+      "https://i.imgur.com/yQDT3LF.png"
+    ],
     "client": false,
     "maintainance": false
   },
   {
     "id": "saturdays-art-surf",
     "name": "saturdays art surf",
+    "name__jp": "サタデーズアートサーフ",
     "date": "2018.12",
     "url": "https://saturdays-art-surf.web.app/",
     "desc": [
       "Saturdays Art Surf is a simple web application which provides users with comfortable time by appreciating huge amount of artworks on digital devices.",
       "Since the information about artworks is intentionally minimized, users are casually able to have fun to appreciate artworks anytime, anywhere.",
       "One of the feature is displaying artworks at random, hence serendipity could be caused."
+    ],
+    "desc__jp": [
+      "サタデーズアートサーフはデジタルデバイスで無数のアートを鑑賞することであなたに快適な時間を提供するシンプルなアプリです。",
+      "それぞれのアートの情報は意図的に減らしているので、あなたは気軽に、いつでも、どこでもアートを鑑賞することができます。",
+      "アートはランダムに表示されるため、偶然の出会いがあるかもしれません。"
     ],
     "mainImage": "https://media.giphy.com/media/UUyqcoaygql5pV1ZEC/source.mp4",
     "subImages": [
@@ -76,12 +110,18 @@
   {
     "id": "todo",
     "name": "todo",
+    "name__jp": "トゥドゥ",
     "date": "2018.11",
     "url": "https://interactive-todo-app.web.app/",
     "desc": [
-      "Todo is an interactive todo application which is made in order to create tasks or memos.",
-      "",
-      ""
+      "Todo is an interactive todo app which is made in order to create tasks or memos.",
+      "The app is suitable for you who use a mobile device.",
+      "You can change background color and sound."
+    ],
+    "desc__jp": [
+      "トゥドゥはあなたのタスクやメモを書き留めておく、インタラクティブなTODOアプリです。",
+      "モバイルデバイスで利用することを想定したアプリです。",
+      "背景色や音を変えることができます。"
     ],
     "mainImage": "https://media.giphy.com/media/SVgGEhIo9TVpSYgAYj/source.mp4",
     "subImages": [
@@ -97,6 +137,7 @@
   {
     "id": "clear",
     "name": "clear",
+    "name__jp": "クリア",
     "date": "2018.10",
     "url": "https://clear-everything.web.app/",
     "desc": [
@@ -107,6 +148,15 @@
       "It would help users to know more their friends through their items.",
       "Since each of user have a different story for each item, users can share background of their items.",
       "Moreover, users can give away, sell or buy items from their friends."
+    ],
+    "desc__jp": [
+      "クリアは、あなたにとって、何が重要であるかをクリアにすることを目的に存在しています。",
+      "このアプリを使うことで、あなたが整理したいモノ、コトをひとつの場所に保管することができます。",
+      "あなたが思うようにカテゴライズすることができます。",
+      "あなたが持っているものを可視化することで、あなたが何を大切にしているのか、どんな人なのかを把握しやすくなります。また、クリアでは友達のアイテムを閲覧することができます。",
+      "あなたは友人のアイテムを通して、より深く友人を知ることができるようになるでしょう。",
+      "皆、アイテムごとに異なるストーリーを持っているため、お互いにアイテムの背景を共有することができます。",
+      "さらに、あなたは友人の間で、アイテムをプレゼントしたり、売ったり、買ったりすることができます。"
     ],
     "mainImage": "https://media.giphy.com/media/WUsbSGv4duVQ4yOnAZ/source.mp4",
     "subImages": [

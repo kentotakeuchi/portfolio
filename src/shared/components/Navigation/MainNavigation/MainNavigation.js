@@ -14,6 +14,7 @@ import { LanguageContext } from '../../../../shared/context/language-context';
 
 const MainNavigation = (props) => {
   const lng = useContext(LanguageContext);
+  const { language } = lng;
 
   useEffect(() => {
     const ids = ['copyright'];
@@ -71,10 +72,11 @@ const MainNavigation = (props) => {
       <main className="main-navigation__main">{props.children}</main>
 
       <MainFooter className="main-footer">
-        <small
-          className="main-footer__copyright"
-          id="copyright"
-        >{`© ${new Date().getFullYear()} kento takeuchi`}</small>
+        <small className="main-footer__copyright" id="copyright">
+          {language === 'en'
+            ? `© ${new Date().getFullYear()} kento takeuchi`
+            : `© ${new Date().getFullYear()} 竹内健人`}
+        </small>
       </MainFooter>
     </div>
   );

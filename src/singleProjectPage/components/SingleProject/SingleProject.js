@@ -11,9 +11,11 @@ const SingleProject = ({ selectedProject }) => {
   const {
     // id,
     name,
+    name__jp,
     date,
     url,
     desc,
+    desc__jp,
     mainImage,
     subImages,
     client,
@@ -21,6 +23,7 @@ const SingleProject = ({ selectedProject }) => {
   } = selectedProject;
 
   const lng = useContext(LanguageContext);
+  const { language } = lng;
 
   useEffect(() => {
     const ids = [
@@ -42,12 +45,18 @@ const SingleProject = ({ selectedProject }) => {
   return (
     <div className="single-project">
       <div className="single-project__head-box">
-        {client && <span id="single-project__client">client work</span>}
+        {client && (
+          <span id="single-project__client">
+            {language === 'en' ? 'client work' : 'クライアントワーク'}
+          </span>
+        )}
         {maintainance && (
-          <span id="single-project__maintainance">maintainance..</span>
+          <span id="single-project__maintainance">
+            {language === 'en' ? 'maintainance..' : 'メンテナンス中'}
+          </span>
         )}
         <h3 className="single-project__name" id="single-project__name">
-          {name}
+          {language === 'en' ? name : name__jp}
         </h3>
         <small className="single-project__date" id="single-project__date">
           {date}
@@ -60,11 +69,17 @@ const SingleProject = ({ selectedProject }) => {
         <Video src={mainImage} alt={name} autoPlay loop />
       </figure>
       <p className="single-project__desc" id="single-project__desc">
-        {desc.map((paragraph, i) => (
-          <span key={paragraph} id={`single-project__desc-${i}`}>
-            {paragraph}
-          </span>
-        ))}
+        {language === 'en'
+          ? desc.map((paragraph, i) => (
+              <span key={i} id={`single-project__desc-${i}`}>
+                {paragraph}
+              </span>
+            ))
+          : desc__jp.map((paragraph, i) => (
+              <span key={i} id={`single-project__desc-${i}`}>
+                {paragraph}
+              </span>
+            ))}
       </p>
       <ul className="single-project__sub-img-box">
         {subImages.map((img) => (

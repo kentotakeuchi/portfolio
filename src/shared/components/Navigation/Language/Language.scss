@@ -8,10 +8,18 @@
   color: $color-grey-dark-2;
   cursor: pointer;
 
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-primary-light;
+  }
+
   & li:hover,
   li:active,
   li.active {
     color: $color-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-primary;
+    }
   }
 
   & span {

@@ -11,9 +11,9 @@ import { useLanguage } from './shared/hooks/language-hook';
 
 // CUSTOM PAGE COMPONENT
 const SingleBlogPage = React.lazy(() =>
-  import('./blogsPage/pages/SingleBlogPage')
+  import('./blogPage/pages/SingleBlogPage')
 );
-const BlogsPage = React.lazy(() => import('./blogsPage/pages/BlogsPage'));
+const BlogPage = React.lazy(() => import('./blogPage/pages/BlogPage'));
 const ContactPage = React.lazy(() => import('./contactPage/pages/ContactPage'));
 const ProfilePage = React.lazy(() => import('./profilePage/pages/ProfilePage'));
 const SingleProjectPage = React.lazy(() =>
@@ -29,7 +29,7 @@ const App = (props) => {
   let routes = (
     <Switch>
       <Route path="/blog/:blogId" component={SingleBlogPage} />
-      <Route path="/blog" component={BlogsPage} />
+      <Route path="/blog" component={BlogPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/profile" component={ProfilePage} />
       <Route path="/projects/:projectId" component={SingleProjectPage} />
