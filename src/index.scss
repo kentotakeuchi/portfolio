@@ -117,6 +117,14 @@ a {
   }
 }
 
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   img,
   video {

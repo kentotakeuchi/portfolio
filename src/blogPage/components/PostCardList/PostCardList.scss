@@ -2,8 +2,7 @@
 
 .post-card-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 10rem;
 
   @include respond(phone) {
     grid-template-columns: none;

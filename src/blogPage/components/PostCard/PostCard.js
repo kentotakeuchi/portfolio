@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import './PostCard.scss';
 import Image from '../../../shared/components/UIElements/Image/Image';
 
-const PostCard = ({ slug, title, title__jp, date, desc, mainImage }) => {
+const PostCard = ({ slug, title, date, desc, mainImage }) => {
   return (
     <li className="post-card__item">
       <Link to={`/blog/${slug}`}>
-        <article className="post-card__text-box">
+        <article className="post-card__article">
           <header className="post-card__head">
             <h3 className="post-card__title" id={slug}>
               {title}

@@ -1,7 +1,6 @@
+@import '../../../../scss/variables.scss';
+
 .paginator {
-  &--product-library,
-  &--post-library,
-  &--products,
   &--posts {
     display: grid;
     row-gap: 5rem;
@@ -17,10 +16,23 @@
     text-transform: capitalize;
   }
 
+  &__control-box button {
+    background: $color-white;
+
+    @media (prefers-color-scheme: dark) {
+      background: inherit;
+      color: $color-dark-primary;
+    }
+  }
+
   &__number {
   }
 
   &__number--active {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $color-black;
+
+    @media (prefers-color-scheme: dark) {
+      border-bottom: 1px solid $color-dark-primary;
+    }
   }
 }

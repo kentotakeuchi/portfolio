@@ -4,57 +4,43 @@
 .post-card {
   &__article {
     display: grid;
-    row-gap: 1rem;
-  }
-
-  &__category {
-    font-family: 'Gotham', Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: grey;
-  }
-
-  &__container {
-    display: grid;
-    row-gap: 2rem;
-  }
-
-  &__main-image-box {
+    row-gap: 5rem;
   }
 
   &__head {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
 
     @include respond(phone) {
-      display: grid;
+      padding: 0 2rem;
     }
   }
 
   &__title {
     font-family: 'Miller Banner', 'Times New Roman', serif;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 5rem;
     text-transform: capitalize;
     overflow-wrap: anywhere;
     hyphens: auto;
   }
 
   &__date {
-    font-family: 'Miller Banner', 'Times New Roman', serif;
   }
 
   &__body {
     display: grid;
-    row-gap: 1rem;
-
-    & > svg {
-      justify-self: end;
-    }
+    row-gap: 3rem;
   }
 
-  &__description {
+  &__main-image-box {
+  }
+
+  &__desc {
     font-family: 'Gotham Light', Arial, Helvetica, sans-serif;
     font-size: 13px;
+
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
   }
 }

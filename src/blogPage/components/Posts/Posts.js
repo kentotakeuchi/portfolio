@@ -45,7 +45,7 @@ const Posts = () => {
 
       try {
         // let url = `${process.env.REACT_APP_BACKEND_URL}/posts?page=${page}&limit=3`;
-        let url = `${process.env.REACT_APP_BACKEND_URL}/posts.json`;
+        let url = `${process.env.REACT_APP_BACKEND_URL}/posts.json?orderBy="$key"&limitToFirst=3&print=pretty`;
 
         const responseData = await sendRequest(url, 'GET', null, {});
         console.log({ responseData });
@@ -55,7 +55,7 @@ const Posts = () => {
           fetchedPosts.push(responseData[key]);
         }
         setPosts(fetchedPosts);
-        setTotalPostsLocal(responseData.total);
+        setTotalPostsLocal(fetchedPosts.length);
       } catch (err) {}
     },
     [postPage, sendRequest]
