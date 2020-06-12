@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import firebase from 'firebase';
 
 import './Posts.scss';
+import '../../../Firestore';
 import ErrorModal from '../../../shared/components/UIElements/ErrorModal/ErrorModal';
 import LoadingSpinner from '../../../shared/components/UIElements/LoadingSpinner/LoadingSpinner';
 import Paginator from '../../../shared/components/UIElements/Paginator/Paginator';
@@ -8,14 +10,27 @@ import PostCardList from '../PostCardList/PostCardList';
 import { useHttpClient } from '../../../shared/hooks/http-hook';
 
 let loadPosts;
+let totalPosts;
+let db = firebase.firestore();
 
 const Posts = () => {
-  const { isLoading, error, sendRequest, clearError } = useHttpClient();
+  const { isLoading, error, clearError } = useHttpClient();
 
   const [posts, setPosts] = useState([]);
   const [totalPostsLocal, setTotalPostsLocal] = useState(0);
   const [postPage, setPostPage] = useState(1);
-  const postsPerPage = 3;
+  const [first, setFirst] = useState({});
+  const [last, setLast] = useState({});
+  const postsPerPage = 2;
+
+  useEffect(() => {
+    db.collection('posts')
+      .get()
+      .then((snap) => {
+        totalPosts = snap.size;
+        setTotalPostsLocal(totalPosts);
+      });
+  }, []);
 
   useEffect(() => {
     loadPosts();
@@ -27,8 +42,6 @@ const Posts = () => {
 
   loadPosts = useCallback(
     async (direction) => {
-      console.log({ direction });
-
       let page = postPage;
       if (direction) {
         if (direction === 'next') {
@@ -43,22 +56,52 @@ const Posts = () => {
         }
       }
 
-      try {
-        // let url = `${process.env.REACT_APP_BACKEND_URL}/posts?page=${page}&limit=3`;
-        let url = `${process.env.REACT_APP_BACKEND_URL}/posts.json?orderBy="$key"&limitToFirst=3&print=pretty`;
+      let query;
+      let snapshot;
 
-        const responseData = await sendRequest(url, 'GET', null, {});
-        console.log({ responseData });
+      if (direction === 'previous') {
+        query = db
+          .collection('posts')
+          .orderBy('date', 'desc')
+          .endBefore(first.data().date)
+          .limitToLast(postsPerPage);
 
-        const fetchedPosts = [];
-        for (let key in responseData) {
-          fetchedPosts.push(responseData[key]);
-        }
-        setPosts(fetchedPosts);
-        setTotalPostsLocal(fetchedPosts.length);
-      } catch (err) {}
+        snapshot = await query.get();
+
+        setFirst(snapshot.docs[0]);
+        setLast(snapshot.docs[snapshot.docs.length - 1]);
+      } else if (direction === 'next') {
+        query = db
+          .collection('posts')
+          .orderBy('date', 'desc')
+          .startAfter(last.data().date)
+          .limit(postsPerPage);
+
+        snapshot = await query.get();
+
+        setFirst(snapshot.docs[0]);
+        setLast(snapshot.docs[snapshot.docs.length - 1]);
+      } else {
+        query = db
+          .collection('posts')
+          .orderBy('date', 'desc')
+          .limit(postsPerPage);
+
+        snapshot = await query.get();
+
+        setFirst(snapshot.docs[0]);
+        setLast(snapshot.docs[snapshot.docs.length - 1]);
+      }
+
+      const fetchedPosts = [];
+      snapshot.docs.forEach((doc) => {
+        fetchedPosts.push(doc.data());
+      });
+
+      setPosts(fetchedPosts);
+      setTotalPostsLocal(totalPosts);
     },
-    [postPage, sendRequest]
+    [postPage, first, last]
   );
 
   return (

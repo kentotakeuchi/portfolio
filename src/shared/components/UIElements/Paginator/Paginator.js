@@ -7,32 +7,32 @@ const Paginator = ({ children, onPage, lastPage, currentPage, className }) => {
   const lng = useContext(LanguageContext);
   const { language } = lng;
 
-  // Logic for displaying page numbers
-  const pageNumbers = [];
-  for (let i = 1; i <= lastPage; i++) {
-    pageNumbers.push(i);
-  }
-  const pageNumberElements = pageNumbers.map((number) => {
-    if (
-      number === 1 ||
-      number === lastPage ||
-      (number >= currentPage - 2 && number <= currentPage + 2)
-    ) {
-      return (
-        <button
-          key={number}
-          id={number}
-          onClick={() => onPage(number)}
-          className={`paginator__number ${
-            currentPage === number ? 'paginator__number--active' : undefined
-          }`}
-        >
-          {number}
-        </button>
-      );
-    }
-    return undefined;
-  });
+  // // Logic for displaying page numbers
+  // const pageNumbers = [];
+  // for (let i = 1; i <= lastPage; i++) {
+  //   pageNumbers.push(i);
+  // }
+  // const pageNumberElements = pageNumbers.map((number) => {
+  //   if (
+  //     number === 1 ||
+  //     number === lastPage ||
+  //     (number >= currentPage - 2 && number <= currentPage + 2)
+  //   ) {
+  //     return (
+  //       <button
+  //         key={number}
+  //         id={number}
+  //         onClick={() => onPage(number)}
+  //         className={`paginator__number ${
+  //           currentPage === number ? 'paginator__number--active' : undefined
+  //         }`}
+  //       >
+  //         {number}
+  //       </button>
+  //     );
+  //   }
+  //   return undefined;
+  // });
 
   return (
     <div className={`paginator ${className}`}>
@@ -48,7 +48,7 @@ const Paginator = ({ children, onPage, lastPage, currentPage, className }) => {
           </button>
         )}
 
-        {pageNumberElements}
+        {/* {pageNumberElements} */}
 
         {currentPage < lastPage && (
           <button

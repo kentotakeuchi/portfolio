@@ -5,7 +5,7 @@ import PostCard from '../PostCard/PostCard';
 import { LanguageContext } from '../../../shared/context/language-context';
 
 const PostCardList = ({ posts }) => {
-  console.log(Array.from(posts));
+  console.log({ posts });
 
   const lng = useContext(LanguageContext);
   const { language } = lng;
