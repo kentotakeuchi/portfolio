@@ -13,7 +13,7 @@ const PostCardList = ({ posts }) => {
   let postCardElements;
   if (posts.length === 0) {
     postCardElements = (
-      <p>
+      <p className="post-card-list__no-found">
         {language === 'en' ? 'no post found' : 'ブログが見つかりませんでした'}
       </p>
     );

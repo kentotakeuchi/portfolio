@@ -7,4 +7,10 @@
   @include respond(phone) {
     grid-template-columns: none;
   }
+
+  &__no-found {
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
+  }
 }
