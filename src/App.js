@@ -28,7 +28,7 @@ const App = (props) => {
 
   let routes = (
     <Switch>
-      <Route path="/blog/:blogId" component={SingleBlogPage} />
+      <Route path="/blog/:slug" component={SingleBlogPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/profile" component={ProfilePage} />

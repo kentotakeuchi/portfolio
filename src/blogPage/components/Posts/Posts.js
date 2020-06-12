@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 import './Posts.scss';
 import '../../../Firestore';

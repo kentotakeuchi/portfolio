@@ -2,6 +2,8 @@
 @import '../../../scss/mixin.scss';
 
 .post-card {
+  overflow: hidden;
+
   &__article {
     display: grid;
     row-gap: 5rem;
@@ -38,6 +40,7 @@
   &__desc {
     font-family: 'Gotham Light', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow: hidden;
 
     @include respond(phone) {
       padding: 0 2rem;

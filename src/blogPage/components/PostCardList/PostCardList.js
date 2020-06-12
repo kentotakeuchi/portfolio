@@ -21,6 +21,7 @@ const PostCardList = ({ posts }) => {
     postCardElements = posts.map((post, i) => (
       <PostCard
         key={i}
+        i={i}
         slug={post.slug}
         title={language === 'en' ? post.title : post.title__jp}
         date={post.date}

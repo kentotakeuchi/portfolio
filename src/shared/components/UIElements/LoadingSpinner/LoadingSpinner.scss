@@ -16,6 +16,12 @@
   border: 5px solid $color-grey-dark;
   border-color: $color-grey-dark transparent $color-grey-dark transparent;
   animation: lds-dual-ring 1.2s linear infinite;
+
+  @media (prefers-color-scheme: dark) {
+    border: 5px solid $color-dark-primary;
+    border-color: $color-dark-primary transparent $color-dark-primary
+      transparent;
+  }
 }
 
 .loading-spinner__overlay {
@@ -28,6 +34,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (prefers-color-scheme: dark) {
+    background: $color-dark-black;
+    opacity: 0.9;
+  }
 }
 
 @keyframes lds-dual-ring {
