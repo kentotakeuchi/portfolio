@@ -1,5 +1,32 @@
 [
   {
+    "id": "restaurant",
+    "name": "restaurant's website",
+    "name__jp": "レストラン用ウェブサイト",
+    "date": "2020.06",
+    "url": "https://restaurant-7ef9a.web.app/",
+    "desc": [
+      "This website was built for a restaurant or cafe. There are visitor's and administrator's pages on it.",
+      "The website allows an administrator to create and update a product and news.",
+      "As for visitor's design, a visitor is readily able to find essential information which many visitor would like to know on homepage. Therefore, most of visitors do not have to visit other pages. On the flip side, some visitors are able to explore and find more information on other pages."
+    ],
+    "desc__jp": [
+      "このウェブサイトは、レストランもしくはカフェを経営する方を想定して作られました。",
+      "ウェブサイトの管理者は、自身の商品やお知らせを、管理者画面から投稿、更新することができます。",
+      "訪問者側の設計に関しては、訪問者が容易に知りたい情報を見つけられるよう、トップページに多くの訪問者が知りたい情報を載せています。逆により詳しく情報を得たい方は他のページから見つけられるような設計にしています。"
+    ],
+    "mainImage": "https://media.giphy.com/media/RJbTy7mymhEhirBeqG/source.mp4",
+    "subImages": [
+      "https://i.imgur.com/EKnE2bB.png",
+      "https://i.imgur.com/MvrJFtf.png",
+      "https://i.imgur.com/yENL2RJ.png",
+      "https://i.imgur.com/OpeLzxo.png",
+      "https://i.imgur.com/cNNV73J.png"
+    ],
+    "client": false,
+    "maintainance": false
+  },
+  {
     "id": "random-generator-for-soccer",
     "name": "random generator for soccer",
     "name__jp": "ランダムジェネレーター（サッカー用）",

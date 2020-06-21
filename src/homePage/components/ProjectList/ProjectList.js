@@ -25,7 +25,7 @@ let images = [
 
 shuffleArray(images);
 
-// TODO: temp comment out "yuzu"
+// TODO: temp comment out "restaurant"
 const ProjectList = () => {
   const lng = useContext(LanguageContext);
   const { language } = lng;
@@ -36,7 +36,7 @@ const ProjectList = () => {
     // Desktop only
     if (!mq.matches) {
       const body = document.querySelector('body');
-      // const yuzu = document.getElementById('yuzu-ramen');
+      const restaurant = document.getElementById('restaurant');
       const random = document.getElementById('random-generator-for-soccer');
       const kaga = document.getElementById('kaga-electronics-usa');
       const bank = document.getElementById('bank');
@@ -44,7 +44,7 @@ const ProjectList = () => {
       const todo = document.getElementById('todo');
       const clear = document.getElementById('clear');
 
-      const elements = [/*yuzu,*/ random, kaga, bank, saturdays, todo, clear];
+      const elements = [restaurant, random, kaga, bank, saturdays, todo, clear];
 
       elements.forEach((el, i) => {
         el.addEventListener('mouseover', () => {
@@ -69,14 +69,14 @@ const ProjectList = () => {
 
   useEffect(() => {
     let ids = [
-      // 'yuzu-ramen-date',
+      'restaurant-date',
       'random-generator-for-soccer-date',
       'kaga-electronics-usa-date',
       'bank-date',
       'saturdays-art-surf-date',
       'todo-date',
       'clear-date',
-      // 'yuzu-ramen',
+      'restaurant',
       'random-generator-for-soccer',
       'kaga-electronics-usa',
       'bank',
@@ -96,7 +96,7 @@ const ProjectList = () => {
         'project-list__desc-3',
         'project-list__desc-4',
         'project-list__desc-5',
-        // 'project-list__desc-6',
+        'project-list__desc-6',
       ]);
     }
 
