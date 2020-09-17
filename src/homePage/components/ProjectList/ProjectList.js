@@ -25,7 +25,6 @@ let images = [
 
 shuffleArray(images);
 
-// TODO: temp comment out "restaurant"
 const ProjectList = () => {
   const lng = useContext(LanguageContext);
   const { language } = lng;
@@ -36,6 +35,7 @@ const ProjectList = () => {
     // Desktop only
     if (!mq.matches) {
       const body = document.querySelector('body');
+      const muscle = document.getElementById('muscle-memory');
       const restaurant = document.getElementById('restaurant');
       const random = document.getElementById('random-generator-for-soccer');
       const kaga = document.getElementById('kaga-electronics-usa');
@@ -44,7 +44,16 @@ const ProjectList = () => {
       const todo = document.getElementById('todo');
       const clear = document.getElementById('clear');
 
-      const elements = [restaurant, random, kaga, bank, saturdays, todo, clear];
+      const elements = [
+        muscle,
+        restaurant,
+        random,
+        kaga,
+        bank,
+        saturdays,
+        todo,
+        clear,
+      ];
 
       elements.forEach((el, i) => {
         el.addEventListener('mouseover', () => {
@@ -69,6 +78,7 @@ const ProjectList = () => {
 
   useEffect(() => {
     let ids = [
+      'muscle-memory-date',
       'restaurant-date',
       'random-generator-for-soccer-date',
       'kaga-electronics-usa-date',
@@ -76,6 +86,7 @@ const ProjectList = () => {
       'saturdays-art-surf-date',
       'todo-date',
       'clear-date',
+      'muscle-memory',
       'restaurant',
       'random-generator-for-soccer',
       'kaga-electronics-usa',

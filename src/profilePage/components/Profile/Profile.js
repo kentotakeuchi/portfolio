@@ -7,7 +7,7 @@ import { LanguageContext } from '../../../shared/context/language-context';
 import Resume from '../../../asset/docs/kento-takeuchi__resume.pdf';
 
 const portrait =
-  'https://images.unsplash.com/photo-1547508446-e097049cade7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60';
+  'https://portal.staralliance.com/cms/aux-pictures/prototype-images/avatar-default.png/@@images/image.png';
 
 const Profile = () => {
   const lng = useContext(LanguageContext);
